@@ -1,0 +1,872 @@
+--------------------------------------------------------------------------------
+  compile  all                      Wed, 14 Apr 2021, 08:31:02
+--------------------------------------------------------------------------------
+Platform:             x86_64
+Compiler environment: gfortran
+Operating system:     Linux
+Fortran compiler:     gfortran   
+C compiler:           gcc
+Make command:         make -k
+Program name:         all   (compile and link all QUANTICS programs)
+ 
+Program path:         /home/mike/quantics/bin/binary/x86_64
+Object path:          /home/mike/quantics/object/x86_64/gfortran
+Surfaces path:        /home/mike/quantics/bin/dyn_libs
+dynamic lib path:     /home/mike/quantics/bin/dyn_libs
+ 
+All "all"-files -- including the lib -- will be recompiled.
+Starting compilation of serial code.
+ 
+if [ -e /home/mike/quantics/object/x86_64/gfortran/libsrf.a ] ; then  \
+             ar -x /home/mike/quantics/object/x86_64/gfortran/libsrf.a    ; \
+             mv   /home/mike/quantics/source/surfaces ; \
+             rm -f /home/mike/quantics/object/x86_64/gfortran/libsrf.a ; \
+           fi;
+if [ -e /home/mike/quantics/object/x86_64/gfortran/libusrf.a ] ; then  \
+             ar -x /home/mike/quantics/object/x86_64/gfortran/libusrf.a    ; \
+             mv   /home/mike/quantics/source/opfuncs ; \
+             rm -f /home/mike/quantics/object/x86_64/gfortran/libusrf.a ; \
+           fi;
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/SorbieH2O.o /home/mike/quantics/source/surfaces/SorbieH2O.f90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/arpot.o /home/mike/quantics/source/surfaces/arpot.f90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/coortransmod.o /home/mike/quantics/source/surfaces/coortransmod.f90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/doublewell.o /home/mike/quantics/source/surfaces/doublewell.f90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/func1dlib.o /home/mike/quantics/source/surfaces/func1dlib.f90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/funcsrflib.o /home/mike/quantics/source/surfaces/funcsrflib.f90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/gsmodel.o /home/mike/quantics/source/surfaces/gsmodel.f90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/malon.o /home/mike/quantics/source/surfaces/malon.f90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/salicyl.o /home/mike/quantics/source/surfaces/salicyl.f90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/singlewell.o /home/mike/quantics/source/surfaces/singlewell.f90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/DEF_ibr_css.o /home/mike/quantics/source/surfaces/DEF_ibr_css.F90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/c2h.o /home/mike/quantics/source/surfaces/c2h.F90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/nh3_truhlar.o /home/mike/quantics/source/surfaces/nh3_truhlar.F90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/nocl1sch.o /home/mike/quantics/source/surfaces/nocl1sch.F90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/o3woy.o /home/mike/quantics/source/surfaces/o3woy.F90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/tully.o /home/mike/quantics/source/surfaces/tully.F90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/wslfh.o /home/mike/quantics/source/surfaces/wslfh.F90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/zundel.o /home/mike/quantics/source/surfaces/zundel.F90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/DEF_SchwenkeH2O.o /home/mike/quantics/source/surfaces/DEF_SchwenkeH2O.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/DEF_arh2o.o /home/mike/quantics/source/surfaces/DEF_arh2o.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/DEF_gly2pot.o /home/mike/quantics/source/surfaces/DEF_gly2pot.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/DEF_h3oyzcl.o /home/mike/quantics/source/surfaces/DEF_h3oyzcl.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/DEF_h4dj.o /home/mike/quantics/source/surfaces/DEF_h4dj.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/DEF_i2ar.o /home/mike/quantics/source/surfaces/DEF_i2ar.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/bkmp2.o /home/mike/quantics/source/surfaces/bkmp2.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/h2o.o /home/mike/quantics/source/surfaces/h2o.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/h4bmkp.o /home/mike/quantics/source/surfaces/h4bmkp.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/h4srf.o /home/mike/quantics/source/surfaces/h4srf.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/hcn.o /home/mike/quantics/source/surfaces/hcn.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/hfco.o /home/mike/quantics/source/surfaces/hfco.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/hoosrf.o /home/mike/quantics/source/surfaces/hoosrf.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/licnsrf.o /home/mike/quantics/source/surfaces/licnsrf.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/surfaces/wdse.o /home/mike/quantics/source/surfaces/wdse.f
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -c -o /home/mike/quantics/source/opfuncs/usersrf.o /home/mike/quantics/source/opfuncs/usersrf.f90
+ar rlcU  /home/mike/quantics/object/x86_64/gfortran/libsrf.a /home/mike/quantics/source/surfaces/SorbieH2O.o /home/mike/quantics/source/surfaces/arpot.o /home/mike/quantics/source/surfaces/coortransmod.o /home/mike/quantics/source/surfaces/doublewell.o /home/mike/quantics/source/surfaces/func1dlib.o /home/mike/quantics/source/surfaces/funcsrflib.o /home/mike/quantics/source/surfaces/gsmodel.o /home/mike/quantics/source/surfaces/malon.o /home/mike/quantics/source/surfaces/salicyl.o /home/mike/quantics/source/surfaces/singlewell.o   /home/mike/quantics/source/surfaces/DEF_ibr_css.o /home/mike/quantics/source/surfaces/c2h.o /home/mike/quantics/source/surfaces/nh3_truhlar.o /home/mike/quantics/source/surfaces/nocl1sch.o /home/mike/quantics/source/surfaces/o3woy.o /home/mike/quantics/source/surfaces/tully.o /home/mike/quantics/source/surfaces/wslfh.o /home/mike/quantics/source/surfaces/zundel.o   /home/mike/quantics/source/surfaces/DEF_SchwenkeH2O.o /home/mike/quantics/source/surfaces/DEF_arh2o.o /home/mike/quantics/source/surfaces/DEF_gly2pot.o /home/mike/quantics/source/surfaces/DEF_h3oyzcl.o /home/mike/quantics/source/surfaces/DEF_h4dj.o /home/mike/quantics/source/surfaces/DEF_i2ar.o /home/mike/quantics/source/surfaces/bkmp2.o /home/mike/quantics/source/surfaces/h2o.o /home/mike/quantics/source/surfaces/h4bmkp.o /home/mike/quantics/source/surfaces/h4srf.o /home/mike/quantics/source/surfaces/hcn.o /home/mike/quantics/source/surfaces/hfco.o /home/mike/quantics/source/surfaces/hoosrf.o /home/mike/quantics/source/surfaces/licnsrf.o /home/mike/quantics/source/surfaces/wdse.o   
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -o /home/mike/quantics/bin/dyn_libs/libsrf.so  \
+         /home/mike/quantics/source/surfaces/SorbieH2O.o /home/mike/quantics/source/surfaces/arpot.o /home/mike/quantics/source/surfaces/coortransmod.o /home/mike/quantics/source/surfaces/doublewell.o /home/mike/quantics/source/surfaces/func1dlib.o /home/mike/quantics/source/surfaces/funcsrflib.o /home/mike/quantics/source/surfaces/gsmodel.o /home/mike/quantics/source/surfaces/malon.o /home/mike/quantics/source/surfaces/salicyl.o /home/mike/quantics/source/surfaces/singlewell.o   /home/mike/quantics/source/surfaces/DEF_ibr_css.o /home/mike/quantics/source/surfaces/c2h.o /home/mike/quantics/source/surfaces/nh3_truhlar.o /home/mike/quantics/source/surfaces/nocl1sch.o /home/mike/quantics/source/surfaces/o3woy.o /home/mike/quantics/source/surfaces/tully.o /home/mike/quantics/source/surfaces/wslfh.o /home/mike/quantics/source/surfaces/zundel.o   /home/mike/quantics/source/surfaces/DEF_SchwenkeH2O.o /home/mike/quantics/source/surfaces/DEF_arh2o.o /home/mike/quantics/source/surfaces/DEF_gly2pot.o /home/mike/quantics/source/surfaces/DEF_h3oyzcl.o /home/mike/quantics/source/surfaces/DEF_h4dj.o /home/mike/quantics/source/surfaces/DEF_i2ar.o /home/mike/quantics/source/surfaces/bkmp2.o /home/mike/quantics/source/surfaces/h2o.o /home/mike/quantics/source/surfaces/h4bmkp.o /home/mike/quantics/source/surfaces/h4srf.o /home/mike/quantics/source/surfaces/hcn.o /home/mike/quantics/source/surfaces/hfco.o /home/mike/quantics/source/surfaces/hoosrf.o /home/mike/quantics/source/surfaces/licnsrf.o /home/mike/quantics/source/surfaces/wdse.o   
+rm -f /home/mike/quantics/source/surfaces/*.o
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/libusrf.a \
+         /home/mike/quantics/source/opfuncs/usersrf.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -shared -fPIC -o /home/mike/quantics/bin/dyn_libs/libusrf.so  \
+         /home/mike/quantics/source/opfuncs/usersrf.o
+rm -f /home/mike/quantics/source/opfuncs/*.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c cdate.f90
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/include/paths.f90
+mv paths.o /home/mike/quantics/object/x86_64/gfortran/paths.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/mctdhlib/versions.F90 
+mv versions.o /home/mike/quantics/object/x86_64/gfortran/versions.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/mctdh/wrhtxt.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/mctdh.a wrhtxt.o
+rm -f wrhtxt.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/mctdh/eingabemod.F90
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/mctdh.a eingabemod.o
+rm -f eingabemod.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o quantics \
+/home/mike/quantics/object/x86_64/gfortran/quantics.o   \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/mctdh.a \
+/home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a  \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a   \
+-L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o potfit \
+/home/mike/quantics/object/x86_64/gfortran/potfit.o   \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/potfit.a   \
+/home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a    \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+-L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o mcpotfit \
+        /home/mike/quantics/object/x86_64/gfortran/mcpotfit.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/mcpf.a    \
+        /home/mike/quantics/object/x86_64/gfortran/potfit.a  \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a    \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a         \
+-L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o mccpd \
+        /home/mike/quantics/object/x86_64/gfortran/mccpd.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/mcpf.a    \
+        /home/mike/quantics/object/x86_64/gfortran/potfit.a  \
+        /home/mike/quantics/object/x86_64/gfortran/mctdh.a  \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a    \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a         \
+-L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_real/allocate.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/filter.a allocate.o
+rm -f allocate.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_real/calculate.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/filter.a calculate.o
+rm -f calculate.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_real/damping.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/filter.a damping.o
+rm -f damping.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_real/ffort_alloc.F90
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/filter.a ffort_alloc.o
+rm -f ffort_alloc.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_real/genhamil.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/filter.a genhamil.o
+rm -f genhamil.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_real/input.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/filter.a input.o
+rm -f input.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_real/output.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/filter.a output.o
+rm -f output.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_real/utilinp.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/filter.a utilinp.o
+rm -f utilinp.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_real/variation.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/filter.a variation.o
+rm -f variation.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_real/filter.F
+mv filter.o /home/mike/quantics/object/x86_64/gfortran/filter.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o filter  \
+/home/mike/quantics/object/x86_64/gfortran/filter.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/filter.a  \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_cmplx/callocate.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/fdc.a callocate.o
+rm -f callocate.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_cmplx/ccalculate.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/fdc.a ccalculate.o
+rm -f ccalculate.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_cmplx/cdamping.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/fdc.a cdamping.o
+rm -f cdamping.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_cmplx/fcfort_alloc.F90
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/fdc.a fcfort_alloc.o
+rm -f fcfort_alloc.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_cmplx/cgenhamil.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/fdc.a cgenhamil.o
+rm -f cgenhamil.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_cmplx/cinput.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/fdc.a cinput.o
+rm -f cinput.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_cmplx/coutput.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/fdc.a coutput.o
+rm -f coutput.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_cmplx/cutilinp.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/fdc.a cutilinp.o
+rm -f cutilinp.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_cmplx/cvariation.F
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/fdc.a cvariation.o
+rm -f cvariation.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/fd_cmplx/fdc.F
+mv fdc.o /home/mike/quantics/object/x86_64/gfortran/fdc.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o fdc  \
+/home/mike/quantics/object/x86_64/gfortran/fdc.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/fdc.a  \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a    
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/numeric/amoeba.f
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a amoeba.o
+rm -f amoeba.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/numeric/frprnm.f
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a frprnm.o
+rm -f frprnm.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/numeric/linmin.f
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a linmin.o
+rm -f linmin.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/numeric/powell.f
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a powell.o
+rm -f powell.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/functions.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a functions.o
+rm -f functions.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/utils.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a utils.o
+rm -f utils.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/rddatamod.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a rddatamod.o
+rm -f rddatamod.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/calc_low_cimod.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a calc_low_cimod.o
+rm -f calc_low_cimod.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/density_vcham.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a density_vcham.o
+rm -f density_vcham.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/iofiles.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a iofiles.o
+rm -f iofiles.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/invchammod.F90
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a invchammod.o
+rm -f invchammod.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/output_vcham.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a output_vcham.o
+rm -f output_vcham.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/symmetry.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a symmetry.o
+rm -f symmetry.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/numeric/amoeba_lm.f
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/vcham.a amoeba_lm.o
+rm -f amoeba_lm.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/vctrans.F90
+mv vctrans.o /home/mike/quantics/object/x86_64/gfortran/vctrans.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o vctrans  \
+/home/mike/quantics/object/x86_64/gfortran/vctrans.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o   \
+/home/mike/quantics/object/x86_64/gfortran/vcham.a   \
+/home/mike/quantics/object/x86_64/gfortran/quanticsmod.a \
+/home/mike/quantics/object/x86_64/gfortran/includes.a \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a         
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/vchfit.F90
+mv vchfit.o /home/mike/quantics/object/x86_64/gfortran/vchfit.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o vchfit \
+/home/mike/quantics/object/x86_64/gfortran/vchfit.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/vcham.a   \
+/home/mike/quantics/object/x86_64/gfortran/quanticsmod.a \
+/home/mike/quantics/object/x86_64/gfortran/includes.a \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a         
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/vcpnt.F90
+mv vcpnt.o /home/mike/quantics/object/x86_64/gfortran/vcpnt.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o vcpnt  \
+/home/mike/quantics/object/x86_64/gfortran/vcpnt.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/vcham.a   \
+/home/mike/quantics/object/x86_64/gfortran/quanticsmod.a \
+/home/mike/quantics/object/x86_64/gfortran/includes.a \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a         
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/vcplot.F90
+mv vcplot.o /home/mike/quantics/object/x86_64/gfortran/vcplot.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o vcplot  \
+/home/mike/quantics/object/x86_64/gfortran/vcplot.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/vcham.a   \
+/home/mike/quantics/object/x86_64/gfortran/quanticsmod.a \
+/home/mike/quantics/object/x86_64/gfortran/includes.a \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a         
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/vcgaanal.F90
+mv vcgaanal.o /home/mike/quantics/object/x86_64/gfortran/vcgaanal.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o vcgaanal  \
+        /home/mike/quantics/object/x86_64/gfortran/vcgaanal.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/vcham.a   \
+/home/mike/quantics/object/x86_64/gfortran/quanticsmod.a \
+/home/mike/quantics/object/x86_64/gfortran/includes.a \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a         
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/lmtrans.F90
+mv lmtrans.o /home/mike/quantics/object/x86_64/gfortran/lmtrans.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o lmtrans  \
+/home/mike/quantics/object/x86_64/gfortran/lmtrans.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/vcham.a   \
+/home/mike/quantics/object/x86_64/gfortran/quanticsmod.a \
+/home/mike/quantics/object/x86_64/gfortran/includes.a \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a     
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/lmfit.F90
+mv lmfit.o /home/mike/quantics/object/x86_64/gfortran/lmfit.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o lmfit \
+/home/mike/quantics/object/x86_64/gfortran/lmfit.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/vcham.a   \
+/home/mike/quantics/object/x86_64/gfortran/quanticsmod.a \
+/home/mike/quantics/object/x86_64/gfortran/includes.a \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a   
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/lmplot.F90
+mv lmplot.o /home/mike/quantics/object/x86_64/gfortran/lmplot.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o lmplot  \
+/home/mike/quantics/object/x86_64/gfortran/lmplot.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/vcham.a   \
+/home/mike/quantics/object/x86_64/gfortran/quanticsmod.a \
+/home/mike/quantics/object/x86_64/gfortran/includes.a \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a    
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/vcrotation.F90
+mv vcrotation.o /home/mike/quantics/object/x86_64/gfortran/vcrotation.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o vcrotation  \
+/home/mike/quantics/object/x86_64/gfortran/vcrotation.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/vcham.a   \
+/home/mike/quantics/object/x86_64/gfortran/quanticsmod.a \
+/home/mike/quantics/object/x86_64/gfortran/includes.a \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a     
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/vcextract.F90
+mv vcextract.o /home/mike/quantics/object/x86_64/gfortran/vcextract.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o vcextract  \
+/home/mike/quantics/object/x86_64/gfortran/vcextract.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/vcham.a   \
+/home/mike/quantics/object/x86_64/gfortran/quanticsmod.a \
+/home/mike/quantics/object/x86_64/gfortran/includes.a \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a    
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/vcsrf.F90
+mv vcsrf.o /home/mike/quantics/object/x86_64/gfortran/vcsrf.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o vcsrf  \
+/home/mike/quantics/object/x86_64/gfortran/vcsrf.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/vcham.a   \
+/home/mike/quantics/object/x86_64/gfortran/quanticsmod.a \
+        /home/mike/quantics/object/x86_64/gfortran/includes.a \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a      
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/xcurl.F90
+mv xcurl.o /home/mike/quantics/object/x86_64/gfortran/xcurl.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o xcurl  \
+/home/mike/quantics/object/x86_64/gfortran/xcurl.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/vcham.a   \
+/home/mike/quantics/object/x86_64/gfortran/quanticsmod.a \
+        /home/mike/quantics/object/x86_64/gfortran/includes.a \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a     
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/vcham/vcmin.F90
+mv vcmin.o /home/mike/quantics/object/x86_64/gfortran/vcmin.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o vcmin  \
+/home/mike/quantics/object/x86_64/gfortran/vcmin.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/vcham.a   \
+/home/mike/quantics/object/x86_64/gfortran/quanticsmod.a \
+        /home/mike/quantics/object/x86_64/gfortran/includes.a \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a    
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o adpop \
+/home/mike/quantics/object/x86_64/gfortran/adpop.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+        -L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o adproj \
+/home/mike/quantics/object/x86_64/gfortran/adproj.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a \
+/home/mike/quantics/object/x86_64/gfortran/potfit.a  \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+        -L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o analysis \
+     /home/mike/quantics/object/x86_64/gfortran/analysis.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o aoverlap \
+     /home/mike/quantics/object/x86_64/gfortran/aoverlap.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o autospec \
+/home/mike/quantics/object/x86_64/gfortran/autospec.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o chnpot \
+/home/mike/quantics/object/x86_64/gfortran/chnpot.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/potfit.a  \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/includes.a \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o cleandb \
+/home/mike/quantics/object/x86_64/gfortran/cleandb.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o compare \
+/home/mike/quantics/object/x86_64/gfortran/compare.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o convdb \
+/home/mike/quantics/object/x86_64/gfortran/convdb.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o crosscorr \
+/home/mike/quantics/object/x86_64/gfortran/crosscorr.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+        -L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o crosspec \
+/home/mike/quantics/object/x86_64/gfortran/crosspec.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o ddgeom \
+/home/mike/quantics/object/x86_64/gfortran/ddgeom.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o ddtraj \
+/home/mike/quantics/object/x86_64/gfortran/ddtraj.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o dengen \
+/home/mike/quantics/object/x86_64/gfortran/dengen.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o di2ad \
+/home/mike/quantics/object/x86_64/gfortran/di2ad.o    \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+        -L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o ddpes \
+/home/mike/quantics/object/x86_64/gfortran/ddpes.o    \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+        -L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o expect \
+/home/mike/quantics/object/x86_64/gfortran/expect.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+        -L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o flux \
+/home/mike/quantics/object/x86_64/gfortran/flux.o    \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+        -L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o guessfld \
+/home/mike/quantics/object/x86_64/gfortran/guessfld.o  \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o gwptraj \
+/home/mike/quantics/object/x86_64/gfortran/gwptraj.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o maxpe \
+/home/mike/quantics/object/x86_64/gfortran/maxpe.o   \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o mergedb \
+/home/mike/quantics/object/x86_64/gfortran/mergedb.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o ml2mctdh \
+/home/mike/quantics/object/x86_64/gfortran/ml2mctdh.o    \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gcc -O2 -fPIC -m64 -DF2C_STYLE=0 -o mmemtest /home/mike/quantics/object/x86_64/gfortran/mmemtest.o 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o norm \
+/home/mike/quantics/object/x86_64/gfortran/norm.o    \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o natpot2cpd \
+        /home/mike/quantics/object/x86_64/gfortran/natpot2cpd.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/mcpf.a    \
+        /home/mike/quantics/object/x86_64/gfortran/potfit.a  \
+        /home/mike/quantics/object/x86_64/gfortran/mctdh.a  \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a    \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a         \
+-L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o npotminmax \
+/home/mike/quantics/object/x86_64/gfortran/npotminmax.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/potfit.a  \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+-L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o ortho \
+/home/mike/quantics/object/x86_64/gfortran/ortho.o   \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+-L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o overlap \
+/home/mike/quantics/object/x86_64/gfortran/overlap.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+-L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o psi2ex \
+/home/mike/quantics/object/x86_64/gfortran/psi2ex.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+/home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o psi2rst \
+/home/mike/quantics/object/x86_64/gfortran/psi2rst.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o rdacoeff \
+/home/mike/quantics/object/x86_64/gfortran/rdacoeff.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o rdauto \
+/home/mike/quantics/object/x86_64/gfortran/rdauto.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o rdcheck \
+/home/mike/quantics/object/x86_64/gfortran/rdcheck.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o rddddb \
+/home/mike/quantics/object/x86_64/gfortran/rddddb.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o rdeigval \
+/home/mike/quantics/object/x86_64/gfortran/rdeigval.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o rdggp \
+/home/mike/quantics/object/x86_64/gfortran/rdggp.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o rdgpop \
+/home/mike/quantics/object/x86_64/gfortran/rdgpop.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o rdgrid \
+/home/mike/quantics/object/x86_64/gfortran/rdgrid.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o rdsteps \
+/home/mike/quantics/object/x86_64/gfortran/rdsteps.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o rdupdate \
+/home/mike/quantics/object/x86_64/gfortran/rdupdate.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o reflex \
+/home/mike/quantics/object/x86_64/gfortran/reflex.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o showd1d \
+/home/mike/quantics/object/x86_64/gfortran/showd1d.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o showfield \
+/home/mike/quantics/object/x86_64/gfortran/showfield.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+        -L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o showpot \
+/home/mike/quantics/object/x86_64/gfortran/showpot.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/potfit.a   \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a   \
+-L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o showspf \
+/home/mike/quantics/object/x86_64/gfortran/showspf.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o showsys \
+/home/mike/quantics/object/x86_64/gfortran/showsys.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+-L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o statepop \
+/home/mike/quantics/object/x86_64/gfortran/statepop.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o stpoppsi \
+/home/mike/quantics/object/x86_64/gfortran/stpoppsi.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o sumspec \
+/home/mike/quantics/object/x86_64/gfortran/sumspec.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o twopdens \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/twopdens.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o tdpespec \
+/home/mike/quantics/object/x86_64/gfortran/tdpespec.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o twprob \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/twprob.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o trafodb \
+/home/mike/quantics/object/x86_64/gfortran/trafodb.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o vminmax \
+/home/mike/quantics/object/x86_64/gfortran/vminmax.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o wfproj \
+/home/mike/quantics/object/x86_64/gfortran/wfproj.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+        -L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o simpsys \
+/home/mike/quantics/object/x86_64/gfortran/simpsys.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+-L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o shzagreb_inter \
+/home/mike/quantics/object/x86_64/gfortran/shzagreb_inter.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/mctdh.a \
+/home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+/home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+-L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/oct/fnceintermsmod.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/oct.a fnceintermsmod.o
+rm -f fnceintermsmod.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/oct/fnceingabemod.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/oct.a fnceingabemod.o
+rm -f fnceingabemod.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/oct/efroutines.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/oct.a efroutines.o
+rm -f efroutines.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/oct/efinput.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/oct.a efinput.o
+rm -f efinput.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/oct/efoutput.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/oct.a efoutput.o
+rm -f efoutput.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/oct/loadfld.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/oct.a loadfld.o
+rm -f loadfld.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/oct/fldrdinp.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/oct.a fldrdinp.o
+rm -f fldrdinp.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/oct/fldoperate.f90 
+ar rlcU /home/mike/quantics/object/x86_64/gfortran/oct.a fldoperate.o
+rm -f fldoperate.o
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/oct/genfld.F90
+mv genfld.o /home/mike/quantics/object/x86_64/gfortran/genfld.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o genfld \
+/home/mike/quantics/object/x86_64/gfortran/genfld.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/mctdh.a  \
+/home/mike/quantics/object/x86_64/gfortran/oct.a  \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+        -L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/oct/xfrog.F90
+mv xfrog.o /home/mike/quantics/object/x86_64/gfortran/xfrog.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o xfrog \
+/home/mike/quantics/object/x86_64/gfortran/xfrog.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/oct/efield.F90
+mv efield.o /home/mike/quantics/object/x86_64/gfortran/efield.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o efield \
+/home/mike/quantics/object/x86_64/gfortran/efield.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/oct.a   \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+        -L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/oct/fldop.F90
+mv fldop.o /home/mike/quantics/object/x86_64/gfortran/fldop.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o fldop \
+/home/mike/quantics/object/x86_64/gfortran/fldop.o \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+/home/mike/quantics/object/x86_64/gfortran/mctdh.a  \
+/home/mike/quantics/object/x86_64/gfortran/oct.a  \
+/home/mike/quantics/object/x86_64/gfortran/analyse.a \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a  \
+        -L /home/mike/quantics/bin/dyn_libs -lsrf -lusrf 
+gfortran  -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -c /home/mike/quantics/source/oct/jfunc.F90
+mv jfunc.o /home/mike/quantics/object/x86_64/gfortran/jfunc.o
+gfortran -O2 -ffixed-line-length-none -frecord-marker=4 -funroll-loops -fomit-frame-pointer -fPIC  -m64 -msse2 -mfpmath=sse -ffpe-summary=none -fconvert=little-endian -J/home/mike/quantics/object/x86_64/gfortran/include -I/home/mike/quantics/object/x86_64/gfortran/include  -o jfunc \
+/home/mike/quantics/object/x86_64/gfortran/jfunc.o  \
+/home/mike/quantics/object/x86_64/gfortran/versions.o \
+        /home/mike/quantics/object/x86_64/gfortran/analyse.a   \
+        /home/mike/quantics/object/x86_64/gfortran/propwf.a /home/mike/quantics/object/x86_64/gfortran/geninwf.a /home/mike/quantics/object/x86_64/gfortran/genoper.a /home/mike/quantics/object/x86_64/gfortran/gendvr.a /home/mike/quantics/object/x86_64/gfortran/quanticslib.a /home/mike/quantics/object/x86_64/gfortran/opfuncs.a /home/mike/quantics/object/x86_64/gfortran/libode.a  /home/mike/quantics/object/x86_64/gfortran/quanticsmod.a /home/mike/quantics/object/x86_64/gfortran/includes.a   \
+        /home/mike/quantics/object/x86_64/gfortran/libnum.a /home/mike/quantics/object/x86_64/gfortran/libsys.a /home/mike/quantics/object/x86_64/gfortran/liblapack.a /home/mike/quantics/object/x86_64/gfortran/libblas.a /home/mike/quantics/object/x86_64/gfortran/libomp.a 
+ 
+ 
+Executable /home/mike/quantics/bin/binary/x86_64/quantics created.
+Executable /home/mike/quantics/bin/binary/x86_64/potfit created.
+Executable /home/mike/quantics/bin/binary/x86_64/filter created.
+Executable /home/mike/quantics/bin/binary/x86_64/fdc created.
+Executable /home/mike/quantics/bin/binary/x86_64/mcpotfit created.
+Executable /home/mike/quantics/bin/binary/x86_64/mccpd created.
+Executable /home/mike/quantics/bin/binary/x86_64/shzagreb_inter created.
+Executable /home/mike/quantics/bin/binary/x86_64/mmemtest created.
+Executable /home/mike/quantics/bin/binary/x86_64/adpop created.
+Executable /home/mike/quantics/bin/binary/x86_64/adproj created.
+Executable /home/mike/quantics/bin/binary/x86_64/analysis created.
+Executable /home/mike/quantics/bin/binary/x86_64/aoverlap created.
+Executable /home/mike/quantics/bin/binary/x86_64/autospec created.
+Executable /home/mike/quantics/bin/binary/x86_64/chnpot created.
+Executable /home/mike/quantics/bin/binary/x86_64/cleandb created.
+Executable /home/mike/quantics/bin/binary/x86_64/compare created.
+Executable /home/mike/quantics/bin/binary/x86_64/convdb created.
+Executable /home/mike/quantics/bin/binary/x86_64/crosscorr created.
+Executable /home/mike/quantics/bin/binary/x86_64/crosspec created.
+Executable /home/mike/quantics/bin/binary/x86_64/ddgeom created.
+Executable /home/mike/quantics/bin/binary/x86_64/ddpes created.
+Executable /home/mike/quantics/bin/binary/x86_64/ddtraj created.
+Executable /home/mike/quantics/bin/binary/x86_64/dengen created.
+Executable /home/mike/quantics/bin/binary/x86_64/di2ad created.
+Executable /home/mike/quantics/bin/binary/x86_64/expect created.
+Executable /home/mike/quantics/bin/binary/x86_64/flux created.
+Executable /home/mike/quantics/bin/binary/x86_64/guessfld created.
+Executable /home/mike/quantics/bin/binary/x86_64/gwptraj created.
+Executable /home/mike/quantics/bin/binary/x86_64/maxpe created.
+Executable /home/mike/quantics/bin/binary/x86_64/mergedb created.
+Executable /home/mike/quantics/bin/binary/x86_64/ml2mctdh created.
+Executable /home/mike/quantics/bin/binary/x86_64/natpot2cpd created.
+Executable /home/mike/quantics/bin/binary/x86_64/norm created.
+Executable /home/mike/quantics/bin/binary/x86_64/npotminmax created.
+Executable /home/mike/quantics/bin/binary/x86_64/ortho created.
+Executable /home/mike/quantics/bin/binary/x86_64/overlap created.
+Executable /home/mike/quantics/bin/binary/x86_64/psi2ex created.
+Executable /home/mike/quantics/bin/binary/x86_64/psi2rst created.
+Executable /home/mike/quantics/bin/binary/x86_64/rdacoeff created.
+Executable /home/mike/quantics/bin/binary/x86_64/rdauto created.
+Executable /home/mike/quantics/bin/binary/x86_64/rdcheck created.
+Executable /home/mike/quantics/bin/binary/x86_64/rddddb created.
+Executable /home/mike/quantics/bin/binary/x86_64/rdeigval created.
+Executable /home/mike/quantics/bin/binary/x86_64/rdggp created.
+Executable /home/mike/quantics/bin/binary/x86_64/rdgpop created.
+Executable /home/mike/quantics/bin/binary/x86_64/rdgrid created.
+Executable /home/mike/quantics/bin/binary/x86_64/rdsteps created.
+Executable /home/mike/quantics/bin/binary/x86_64/rdupdate created.
+Executable /home/mike/quantics/bin/binary/x86_64/reflex created.
+Executable /home/mike/quantics/bin/binary/x86_64/showd1d created.
+Executable /home/mike/quantics/bin/binary/x86_64/showfield created.
+Executable /home/mike/quantics/bin/binary/x86_64/showpot created.
+Executable /home/mike/quantics/bin/binary/x86_64/showspf created.
+Executable /home/mike/quantics/bin/binary/x86_64/showsys created.
+Executable /home/mike/quantics/bin/binary/x86_64/simpsys created.
+Executable /home/mike/quantics/bin/binary/x86_64/statepop created.
+Executable /home/mike/quantics/bin/binary/x86_64/stpoppsi created.
+Executable /home/mike/quantics/bin/binary/x86_64/sumspec created.
+Executable /home/mike/quantics/bin/binary/x86_64/tdpespec created.
+Executable /home/mike/quantics/bin/binary/x86_64/trafodb created.
+Executable /home/mike/quantics/bin/binary/x86_64/twopdens created.
+Executable /home/mike/quantics/bin/binary/x86_64/twprob created.
+Executable /home/mike/quantics/bin/binary/x86_64/vminmax created.
+Executable /home/mike/quantics/bin/binary/x86_64/wfproj created.
+Executable /home/mike/quantics/bin/binary/x86_64/lmfit created.
+Executable /home/mike/quantics/bin/binary/x86_64/lmplot created.
+Executable /home/mike/quantics/bin/binary/x86_64/lmtrans created.
+Executable /home/mike/quantics/bin/binary/x86_64/vcextract created.
+Executable /home/mike/quantics/bin/binary/x86_64/vcgaanal created.
+Executable /home/mike/quantics/bin/binary/x86_64/vchfit created.
+Executable /home/mike/quantics/bin/binary/x86_64/vcmin created.
+Executable /home/mike/quantics/bin/binary/x86_64/vcplot created.
+Executable /home/mike/quantics/bin/binary/x86_64/vcpnt created.
+Executable /home/mike/quantics/bin/binary/x86_64/vcrotation created.
+Executable /home/mike/quantics/bin/binary/x86_64/vcsrf created.
+Executable /home/mike/quantics/bin/binary/x86_64/vctrans created.
+Executable /home/mike/quantics/bin/binary/x86_64/xcurl created.
+Executable /home/mike/quantics/bin/binary/x86_64/efield created.
+Executable /home/mike/quantics/bin/binary/x86_64/fldop created.
+Executable /home/mike/quantics/bin/binary/x86_64/genfld created.
+Executable /home/mike/quantics/bin/binary/x86_64/jfunc created.
+Executable /home/mike/quantics/bin/binary/x86_64/xfrog created.
+ 
+Congratulations, the compilation was successful.
+ 82 executables are created.
+ 
+------  compile  ---  Wed, 14 Apr 2021, 08:32:35 ---  good bye!  ---------------
+--------------------------------------------------------------------------------
+ 
+

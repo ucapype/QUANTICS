@@ -1,0 +1,2780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1327</width>
+    <height>930</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="page_kind_select">
+       <widget class="QRadioButton" name="directRBtn">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>110</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Direct Dynamic</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="MCTDHRBtn">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>140</y>
+          <width>89</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>MCTDH</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="kindStartBtn">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>170</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>start</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_direct_select">
+       <widget class="QCheckBox" name="directRunCBox">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>110</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Run</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="directLable">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>80</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Direct Dynamic</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="directCBox">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>130</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Direct</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="geometryCBox">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>150</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Geometry</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="directStartBtn">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>180</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>start</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_MCTDH_select">
+       <widget class="QCheckBox" name="operatorCbox">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>90</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Operator</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="MCTDHStartBtn">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>220</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>start</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="MCTDHLable">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>40</y>
+          <width>41</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>MCTDH</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="MCTDHRunCBox">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>70</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Run</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="basisCbox">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>110</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Particle Basis</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="mlRBtn">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>130</y>
+          <width>89</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ML</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="spfRBtn">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>150</y>
+          <width>89</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SPF</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="spdoRBtn">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>170</y>
+          <width>89</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SPDO</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="initWfCBox">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>190</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Init WF</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_main">
+       <widget class="QPushButton" name="genfile_but">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>740</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Press to Generate Input file</string>
+        </property>
+        <property name="text">
+         <string>Generate File</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="info_txt">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>800</y>
+          <width>651</width>
+          <height>71</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="file_text">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>10</y>
+          <width>631</width>
+          <height>691</height>
+         </rect>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QTabWidget" name="maintab">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>651</width>
+          <height>781</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>7</number>
+        </property>
+        <property name="elideMode">
+         <enum>Qt::ElideRight</enum>
+        </property>
+        <property name="tabBarAutoHide">
+         <bool>false</bool>
+        </property>
+        <property name="secname" stdset="0">
+         <string>test</string>
+        </property>
+        <property name="func" stdset="0">
+         <string/>
+        </property>
+        <widget class="QWidget" name="run_tab">
+         <property name="secname" stdset="0">
+          <string>runsection</string>
+         </property>
+         <property name="func" stdset="0">
+          <string>find_run_cntrls</string>
+         </property>
+         <property name="ctl_list" stdset="0">
+          <string>run_control</string>
+         </property>
+         <property name="sec_chk" stdset="0">
+          <string>run_inc</string>
+         </property>
+         <property name="sec_str" stdset="0">
+          <string>RUN</string>
+         </property>
+         <attribute name="title">
+          <string>Run</string>
+         </attribute>
+         <attribute name="toolTip">
+          <string>The RUN-SECTION contains keywords defining the calculation to be made, and general options for the run</string>
+         </attribute>
+         <widget class="QPlainTextEdit" name="name_txt">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>261</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The name of the calculation. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;A directory with name S is required in which files related to the calculation, unless otherwise explicitely stated, will be written.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="plainText">
+           <string>NULL</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="nam_label">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>59</width>
+            <height>15</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>name</string>
+          </property>
+         </widget>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>240</y>
+            <width>181</width>
+            <height>201</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Timings</string>
+          </property>
+          <widget class="QDoubleSpinBox" name="tinit_inp">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>66</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="decimals">
+            <number>1</number>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>tinit</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="tin_lab">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>59</width>
+             <height>15</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>tinit</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="tfin_lab">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>20</y>
+             <width>59</width>
+             <height>15</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>tfinal</string>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="tfin_inp">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>40</y>
+             <width>66</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="decimals">
+            <number>1</number>
+           </property>
+           <property name="value">
+            <double>25.000000000000000</double>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>tfinal</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="tout_lab">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>70</y>
+             <width>59</width>
+             <height>15</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>tout</string>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="tout_inp">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>90</y>
+             <width>66</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="decimals">
+            <number>1</number>
+           </property>
+           <property name="value">
+            <double>0.500000000000000</double>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>tout</string>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="tpsi_inp">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>90</y>
+             <width>66</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="decimals">
+            <number>1</number>
+           </property>
+           <property name="value">
+            <double>0.500000000000000</double>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>tpsi</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="tpsi_lab">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>70</y>
+             <width>59</width>
+             <height>15</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>tpsi</string>
+           </property>
+          </widget>
+          <widget class="QTimeEdit" name="tstop_tim">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>140</y>
+             <width>118</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The stop-time (real-time) is written to the stop file. &lt;/p&gt;&lt;p&gt;The format is hhh:mm (i.e. 009:25). &lt;/p&gt;&lt;p&gt;The job will be stopped after the first output after hhh:mm real-time. &lt;/p&gt;&lt;p&gt;Note: if the stop time is next day, add 24 to the hours. E.g. 057:25 will stop the run two days later after 9:25 (24+24+9=57). &lt;/p&gt;&lt;p&gt;NB: If the stopfile is removed, the run will stop after the next output.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="displayFormat">
+            <string>HHH:mm</string>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>tstop</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="tout_lab_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>120</y>
+             <width>59</width>
+             <height>15</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>tstop</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>120</y>
+            <width>261</width>
+            <height>311</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Type of calculation</string>
+          </property>
+          <widget class="QGroupBox" name="groupBox_6">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>20</y>
+             <width>221</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QRadioButton" name="gendvr_chk">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>100</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="toolTip">
+             <string>A DVR file will be generated.</string>
+            </property>
+            <property name="text">
+             <string>GenDVR</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_7">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>70</y>
+             <width>221</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QRadioButton" name="genoper_chk">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>100</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="toolTip">
+             <string>An operator file will be generated.</string>
+            </property>
+            <property name="text">
+             <string>GenOPER</string>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="genpes_chk">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>40</y>
+              <width>100</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="toolTip">
+             <string>An operator file, called pes, will be generated with only the pes part of the operator.</string>
+            </property>
+            <property name="text">
+             <string>GenPES</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_8">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>140</y>
+             <width>221</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QRadioButton" name="geninwf_chk">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>100</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="toolTip">
+             <string>An initial wavefunction will be generated.</string>
+            </property>
+            <property name="text">
+             <string>GenINWF</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_9">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>190</y>
+             <width>221</width>
+             <height>101</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QRadioButton" name="prop_rad">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>100</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="toolTip">
+             <string>Propagation in real time.</string>
+            </property>
+            <property name="text">
+             <string>Propagation</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+            <property name="quantp" stdset="0">
+             <string>propagation</string>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="cont_rad">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>40</y>
+              <width>100</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="toolTip">
+             <string>A continuation of the run in the name-directory will be performed.</string>
+            </property>
+            <property name="text">
+             <string>Continuation</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+            <property name="quantp" stdset="0">
+             <string>continuation</string>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="test_rad">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>60</y>
+              <width>100</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="toolTip">
+             <string>All input files will be checked and all other files, necessary for a propagation, will be created, but no propagation step will be performed.</string>
+            </property>
+            <property name="text">
+             <string>Test</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+            <property name="quantp" stdset="0">
+             <string>test</string>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="rel_rad">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>80</y>
+              <width>100</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The propagation will be in imaginary time i.e. the wavepacket will be relaxed to the ground state.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="text">
+             <string>Relaxation</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+            <property name="quantp" stdset="0">
+             <string>relaxation</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QRadioButton" name="lev1_rad">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>100</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Level 1</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="lev3_rad">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>140</y>
+             <width>100</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Level 3</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="lev4_rad">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>190</y>
+             <width>100</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Level 4</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="lev2_rad">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>70</y>
+             <width>100</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Level 2</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QPlainTextEdit" name="tit_txt">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>50</y>
+            <width>291</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If the keyword title appears in one line of the run-section, then the next line is supposed to contain a headline title of the run. &lt;/p&gt;&lt;p&gt;This line will be written to output, timing and log files. &lt;/p&gt;&lt;p&gt;Note the title line will be read regardless of special characters like '#' or '!' . &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Alternatively, when an equal sign, = , follows the keyword title, then everything that follows, from the equal sign till the end of the line, is regarded as title. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>title</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="tit_inp">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>30</y>
+            <width>59</width>
+            <height>15</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>title</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="run_free_text">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>470</y>
+            <width>621</width>
+            <height>271</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Space for free text to enter other options&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>free</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="run_inc">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>85</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Check if you want section to be included</string>
+          </property>
+          <property name="text">
+           <string>Include</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="run_ovr_chk">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>30</y>
+            <width>85</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Any files already in name-directory will be overwritten.&lt;/p&gt;&lt;p&gt;If this keyword is not given, and files already exist in name-directory, calculation will stop without these files being overwritten. &lt;/p&gt;&lt;p&gt;It is recommended not to set overwrite but rather to use the option -w .&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Overwrite?</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>overwrite</string>
+          </property>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>110</y>
+            <width>121</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>System Type</string>
+          </property>
+          <widget class="QRadioButton" name="wav_run_rad">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>111</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>	The system will be described by a wavefunction (default)</string>
+           </property>
+           <property name="text">
+            <string>Wavefunction</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>wavefunction</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="den1_run_rad">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>50</y>
+             <width>111</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The system will be described by a density operator, using the type I formalism&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>Density I</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>density1</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="den2_run_rad">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>70</y>
+             <width>111</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The system will be described by a density operator, using the type II formalism&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>Density II</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>density2</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="opfre_lab_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>450</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Other Options</string>
+          </property>
+         </widget>
+         <widget class="QGroupBox" name="runFileGBox">
+          <property name="geometry">
+           <rect>
+            <x>450</x>
+            <y>110</y>
+            <width>121</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>File to generate</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>unique</string>
+          </property>
+          <property name="unique_str" stdset="0">
+           <string>unique_run_file</string>
+          </property>
+          <widget class="QRadioButton" name="runGridpopRBtn">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>111</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>	The system will be described by a wavefunction (default)</string>
+           </property>
+           <property name="text">
+            <string>Gridpop</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>wavefunction</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="runAutoRBtn">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>50</y>
+             <width>111</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The system will be described by a density operator, using the type I formalism&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>Auto</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>density1</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="runStepsRBtn">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>70</y>
+             <width>111</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The system will be described by a density operator, using the type II formalism&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>Steps</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>density2</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="op_tab">
+         <property name="secname" stdset="0">
+          <string>opersection</string>
+         </property>
+         <property name="func" stdset="0">
+          <string>find_op_cntrls</string>
+         </property>
+         <property name="ctl_list" stdset="0">
+          <string>op_control</string>
+         </property>
+         <property name="sec_chk" stdset="0">
+          <string>op_inc</string>
+         </property>
+         <property name="sec_str" stdset="0">
+          <string>OPERATOR</string>
+         </property>
+         <attribute name="title">
+          <string>Operator</string>
+         </attribute>
+         <attribute name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;In the OPERATOR-SECTION the operator to be used is specified. &lt;/p&gt;&lt;p&gt;Parameters and labels defined in the operator file may also be altered here. &lt;/p&gt;&lt;p&gt;The opname keyword is compulsory, all others are optional.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </attribute>
+         <widget class="QPlainTextEdit" name="opname_txt">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>60</y>
+            <width>261</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>The operator with name S.op will be used.</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>opname</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="op_path_txt">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>60</y>
+            <width>341</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The path S will be used to find the operator file. &lt;/p&gt;&lt;p&gt;If oppath is not given, the program will first look in the startup directory and then the default operator path.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>oppath</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="oppath_lab">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>40</y>
+            <width>121</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Operator Path</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="opname_lab">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Operator Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="opfre_lab">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>330</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Other Options</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="op_free_text">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>350</y>
+            <width>611</width>
+            <height>391</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Space for free text to enter other options&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>free</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="opparfile_lab">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>100</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Parfile Name</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="opparfile_text">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>120</y>
+            <width>261</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The parameters to be used in building the Hamiltonian are listed in the file S. &lt;/p&gt;&lt;p&gt;The parameters are defined using the same format as in the PARAMETER-SECTION of the .op file. &lt;/p&gt;&lt;p&gt;The file must start and end with&lt;/p&gt;&lt;p&gt;parameter-section&lt;/p&gt;&lt;p&gt;end-parameter-section&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>parfile</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="opspline_txt">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>120</y>
+            <width>341</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;PES data in a format for spline fitting is contained in the directory S. &lt;/p&gt;&lt;p&gt;See the HOWTO on spline fits for more information.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>splinepath</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="op_spline_lab">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>100</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Spline Path</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="op_inc">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>85</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Check if you want section to be included</string>
+          </property>
+          <property name="text">
+           <string>Include</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="dir_tab">
+         <property name="secname" stdset="0">
+          <string>dirdynsection</string>
+         </property>
+         <property name="func" stdset="0">
+          <string>find_dir_cntrls</string>
+         </property>
+         <property name="ctl_list" stdset="0">
+          <string>dir_control</string>
+         </property>
+         <property name="sec_chk" stdset="0">
+          <string>dir_inc</string>
+         </property>
+         <property name="sec_str" stdset="0">
+          <string>DIRDYN</string>
+         </property>
+         <attribute name="title">
+          <string>Direct Dynamics</string>
+         </attribute>
+         <attribute name="toolTip">
+          <string>In the DIRDYN-SECTION keywords required to run a direct dynamics calculation can be given.</string>
+         </attribute>
+         <widget class="QTextEdit" name="dir_free_text">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>360</y>
+            <width>621</width>
+            <height>391</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Space for free text to enter other options&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>free</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="dirfre_lab">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>340</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Other Options</string>
+          </property>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>30</y>
+            <width>271</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Options related to the quantum calculations&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="title">
+           <string>Quantum Chemistry</string>
+          </property>
+          <widget class="QComboBox" name="dir_qc_comb">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>50</y>
+             <width>121</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>	The quantum chemistry program S will be used. S = Gaussian, Molpro, Molcas</string>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>qcprogram</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>gaussian</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>molpro</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>molcas</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="dirqc_lab">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>QC Programme</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="dirab_lab">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>80</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Ab initio Method</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="dir_ab_comb">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>100</y>
+             <width>121</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The ab initio method used. This enables the progarm to know the format of the data it is looking for. &lt;/p&gt;&lt;p&gt;S = CAS, RHF&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>method</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>RHF</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CAS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CAS/PT2</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QPlainTextEdit" name="dir_sub_txt">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>150</y>
+             <width>241</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The quantum chemistry calculations are started using the command (or script) S. &lt;/p&gt;&lt;p&gt;E.g. if S = qsub then jobs are started using qsub jobname (jobname is the stem of the qc input file). &lt;/p&gt;&lt;p&gt;If the option 2 is added the submission command used is qsub jobname dir (dir is the directory containing the input file)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>subcmd</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="dirsub_lab">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>130</y>
+             <width>141</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Submission command</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="tin_lab_2">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>30</y>
+             <width>59</width>
+             <height>15</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>ener0</string>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="dir_er0_inp">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>50</y>
+             <width>101</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="decimals">
+            <number>10</number>
+           </property>
+           <property name="minimum">
+            <double>-1000000000.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>1000000000.000000000000000</double>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>ener0</string>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="dir_nbasis_inp">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>100</y>
+             <width>66</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Number of basis functions used in the quantum chemistry calculation. &lt;/p&gt;&lt;p&gt;This is used because for some calculations the molecular orbitals' coefficients are stored in file moco.db.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="decimals">
+            <number>0</number>
+           </property>
+           <property name="maximum">
+            <double>500.000000000000000</double>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>nbasis</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="nbas_lab">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>80</y>
+             <width>59</width>
+             <height>15</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>nBasis</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>261</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Options over the database</string>
+          </property>
+          <property name="title">
+           <string>Database Options</string>
+          </property>
+          <widget class="QPlainTextEdit" name="dir_data_txt">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>201</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The data from a direct dynamics run is stored in directory S. &lt;/p&gt;&lt;p&gt;The default is name/dd_data.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>data</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="dirdata_lab">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>141</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Data Directory</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="dir_db_comb">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>100</y>
+             <width>121</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;he string S controls the use of the database.&lt;/p&gt;&lt;p&gt;S = rdwr	write to and read from database (default)&lt;/p&gt;&lt;p&gt;S = read	do not write to database. I.e. do not perform further QC calculations and take PES from DB.&lt;/p&gt;&lt;p&gt;S = only	synonym for read&lt;/p&gt;&lt;p&gt;S = write	QC calculations performed at each step and results stored in database.&lt;/p&gt;&lt;p&gt;S = none	QC calculations performed at each step but not saved.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>db</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>rdwr</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>read</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>only</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>write</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>none</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="dirqc_lab_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>80</y>
+             <width>111</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Database Control</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="dir_ascii_chk">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>200</y>
+             <width>85</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>	At the end of the propagation the DB will be converted to ascii.</string>
+           </property>
+           <property name="text">
+            <string>ascii db?</string>
+           </property>
+           <property name="quantp" stdset="0">
+            <string>ascii_db</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QCheckBox" name="dir_inc">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>85</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Check if you want section to be included</string>
+          </property>
+          <property name="text">
+           <string>Include</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="spf_tab">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Define the single-particle function basis to be used in a wave function calculation or a calculation employing density operators of type II&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="secname" stdset="0">
+          <string>spfsection</string>
+         </property>
+         <property name="func" stdset="0">
+          <string>find_spf_cntrls</string>
+         </property>
+         <property name="ctl_list" stdset="0">
+          <string>spf_control</string>
+         </property>
+         <property name="sec_chk" stdset="0">
+          <string>spf_inc</string>
+         </property>
+         <property name="sec_str" stdset="0">
+          <string>SPF-BASIS</string>
+         </property>
+         <attribute name="title">
+          <string>SPF-Basis</string>
+         </attribute>
+         <widget class="QCheckBox" name="spf_inc">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>0</y>
+            <width>85</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Check if you want section to be included</string>
+          </property>
+          <property name="text">
+           <string>Include</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="spf_free_text">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>130</y>
+            <width>611</width>
+            <height>571</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Space for free text to enter other options&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>free</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="dirfre_lab_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>100</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Other Options</string>
+          </property>
+         </widget>
+         <widget class="QGroupBox" name="spfSetGbox">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>131</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Set Mode</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>unique</string>
+          </property>
+          <property name="unique_str" stdset="0">
+           <string>unique_spf_set</string>
+          </property>
+          <widget class="QRadioButton" name="spfSingleSetRBtn">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>89</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>single-set</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="spfMultiSetRbtn">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>40</y>
+             <width>89</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>multi-set</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="spfNoLabel">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>90</y>
+            <width>151</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>No. nuclear of system:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spfNuclSBox">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>90</y>
+            <width>42</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>unique</string>
+          </property>
+          <property name="unique_str" stdset="0">
+           <string>unique_spf_nuclear</string>
+          </property>
+         </widget>
+         <widget class="QScrollArea" name="spfScrollArea">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>10</y>
+            <width>211</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>209</width>
+             <height>109</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QGridLayout" name="spfNuclearGridLayout"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="spfNameGbox">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>10</y>
+            <width>231</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Name</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>unique</string>
+          </property>
+          <property name="unique_str" stdset="0">
+           <string>unique_spdo_set</string>
+          </property>
+          <widget class="QRadioButton" name="spfDefaultRBtn">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>89</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Default</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="spfCustomRbtn">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>40</y>
+             <width>89</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Custom</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="spfCustomEdit">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>40</y>
+             <width>113</width>
+             <height>20</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="ml_tab">
+         <property name="secname" stdset="0">
+          <string>mlsection</string>
+         </property>
+         <property name="func" stdset="0">
+          <string>find_ml_cntrls</string>
+         </property>
+         <property name="ctl_list" stdset="0">
+          <string>ml_control</string>
+         </property>
+         <property name="sec_chk" stdset="0">
+          <string>ml_inc</string>
+         </property>
+         <property name="sec_str" stdset="0">
+          <string>ML-BASIS</string>
+         </property>
+         <attribute name="title">
+          <string>ML-Basis</string>
+         </attribute>
+         <widget class="QCheckBox" name="ml_inc">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>0</y>
+            <width>85</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Check if you want section to be included</string>
+          </property>
+          <property name="text">
+           <string>Include</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="ml_free_text">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>611</width>
+            <height>651</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Space for free text to enter other options&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>free</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="dirfre_lab_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Other Options</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="spdo_tab">
+         <property name="secname" stdset="0">
+          <string>spdosection</string>
+         </property>
+         <property name="func" stdset="0">
+          <string>find_spdo_cntrls</string>
+         </property>
+         <property name="ctl_list" stdset="0">
+          <string>spdo_control</string>
+         </property>
+         <property name="sec_chk" stdset="0">
+          <string>spdo_inc</string>
+         </property>
+         <property name="sec_str" stdset="0">
+          <string>SPDO-BASIS</string>
+         </property>
+         <attribute name="title">
+          <string>SPDO-Basis</string>
+         </attribute>
+         <widget class="QCheckBox" name="spdo_inc">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>0</y>
+            <width>85</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Check if you want section to be included</string>
+          </property>
+          <property name="text">
+           <string>Include</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="dirfre_lab_4">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>100</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Other Options</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="spdo_free_text">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>130</y>
+            <width>611</width>
+            <height>571</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Space for free text to enter other options&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>free</string>
+          </property>
+         </widget>
+         <widget class="QScrollArea" name="spdoScrollArea">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>10</y>
+            <width>211</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>209</width>
+             <height>109</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <layout class="QGridLayout" name="spdoNuclearGridLayout"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QSpinBox" name="spdoNuclSBox">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>90</y>
+            <width>42</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>unique</string>
+          </property>
+          <property name="unique_str" stdset="0">
+           <string>unique_spdo_nuclear</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="spdoNoLabel">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>90</y>
+            <width>151</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>No. nuclear of system:</string>
+          </property>
+         </widget>
+         <widget class="QGroupBox" name="spdoSetGbox">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>131</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Set Mode</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>unique</string>
+          </property>
+          <property name="unique_str" stdset="0">
+           <string>unique_spdo_set</string>
+          </property>
+          <widget class="QRadioButton" name="spdoSingleSetRBtn">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>89</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>single-set</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="spdoMultiSetRbtn">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>40</y>
+             <width>89</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>multi-set</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="spdoNameGbox">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>10</y>
+            <width>231</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Name</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>unique</string>
+          </property>
+          <property name="unique_str" stdset="0">
+           <string>unique_spdo_set</string>
+          </property>
+          <widget class="QRadioButton" name="spdoDefaultRBtn">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>89</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Default</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="spdoCustomRbtn">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>40</y>
+             <width>89</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Custom</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="spdoCustomEdit">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>40</y>
+             <width>113</width>
+             <height>20</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="geom_tab">
+         <property name="secname" stdset="0">
+          <string>geomsection</string>
+         </property>
+         <property name="func" stdset="0">
+          <string>find_geom_cntrls</string>
+         </property>
+         <property name="ctl_list" stdset="0">
+          <string>geom_control</string>
+         </property>
+         <property name="sec_chk" stdset="0">
+          <string>geom_inc</string>
+         </property>
+         <property name="sec_str" stdset="0">
+          <string>INITIAL-GEOMETRY</string>
+         </property>
+         <attribute name="title">
+          <string>Initial Geom</string>
+         </attribute>
+         <widget class="QLabel" name="dirfre_lab_9">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Other Options</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="geom_free_text">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>611</width>
+            <height>651</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Space for free text to enter other options&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>free</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="geom_inc">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>0</y>
+            <width>85</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Check if you want section to be included</string>
+          </property>
+          <property name="text">
+           <string>Include</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="prim_tab">
+         <property name="secname" stdset="0">
+          <string>primsection</string>
+         </property>
+         <property name="func" stdset="0">
+          <string>find_prim_cntrls</string>
+         </property>
+         <property name="ctl_list" stdset="0">
+          <string>prim_control</string>
+         </property>
+         <property name="sec_chk" stdset="0">
+          <string>prim_inc</string>
+         </property>
+         <property name="sec_str" stdset="0">
+          <string>PRIMITIVE-BASIS</string>
+         </property>
+         <attribute name="title">
+          <string>Primative-Basis</string>
+         </attribute>
+         <widget class="QLabel" name="dirfre_lab_10">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>70</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Other Options</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="prim_free_text">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>611</width>
+            <height>611</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Space for free text to enter other options&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>free</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="prim_inc">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>0</y>
+            <width>85</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Check if you want section to be included</string>
+          </property>
+          <property name="text">
+           <string>Include</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="primElecLabel">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>20</y>
+            <width>201</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>No.of electronic status:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="primElecSBox">
+          <property name="geometry">
+           <rect>
+            <x>590</x>
+            <y>20</y>
+            <width>42</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="value">
+           <number>1</number>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>unique</string>
+          </property>
+          <property name="unique_str" stdset="0">
+           <string>unique_prim_electronic</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="primNuclLabel">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>50</y>
+            <width>201</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>No.of nuclear degree of freedom:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="primNuclSBox">
+          <property name="geometry">
+           <rect>
+            <x>590</x>
+            <y>50</y>
+            <width>42</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="value">
+           <number>1</number>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>unique</string>
+          </property>
+          <property name="unique_str" stdset="0">
+           <string>unique_prim_nuclear</string>
+          </property>
+         </widget>
+         <widget class="QGroupBox" name="primNameGbox">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>10</y>
+            <width>231</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Name</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>unique</string>
+          </property>
+          <property name="unique_str" stdset="0">
+           <string>unique_spdo_set</string>
+          </property>
+          <widget class="QRadioButton" name="primDefaultRBtn">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>89</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Default</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="primCustomRbtn">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>40</y>
+             <width>89</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Custom</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="primCustomEdit">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>40</y>
+             <width>113</width>
+             <height>20</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="wf_tab">
+         <property name="secname" stdset="0">
+          <string>wfsection</string>
+         </property>
+         <property name="func" stdset="0">
+          <string>find_wf_cntrls</string>
+         </property>
+         <property name="ctl_list" stdset="0">
+          <string>wf_control</string>
+         </property>
+         <property name="sec_chk" stdset="0">
+          <string>wf_inc</string>
+         </property>
+         <property name="sec_str" stdset="0">
+          <string>INIT_WF</string>
+         </property>
+         <attribute name="title">
+          <string>Initial WF</string>
+         </attribute>
+         <widget class="QCheckBox" name="wf_inc">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>0</y>
+            <width>85</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Check if you want section to be included</string>
+          </property>
+          <property name="text">
+           <string>Include</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="dirfre_lab_11">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>70</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Other Options</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="wf_free_text">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>611</width>
+            <height>611</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Space for free text to enter other options&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>free</string>
+          </property>
+         </widget>
+         <widget class="QStackedWidget" name="wfStackedWidget">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>20</y>
+            <width>252</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="wf_page_file">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="wfFileNameLabel">
+              <property name="text">
+               <string>File name</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="wfFileNameEdit"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="wf_page_build">
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+             <widget class="QLabel" name="wfElecLabel">
+              <property name="text">
+               <string>No.of electronic status:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="wfElecSBox">
+              <property name="value">
+               <number>1</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="wfNuclLabel">
+              <property name="text">
+               <string>No.of nuclear degree of freedom:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QSpinBox" name="wfNuclSBox">
+              <property name="value">
+               <number>1</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="wfModeGbox">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>10</y>
+            <width>131</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Mode</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>unique</string>
+          </property>
+          <property name="unique_str" stdset="0">
+           <string>unique_wf_mode</string>
+          </property>
+          <widget class="QRadioButton" name="wfReadFileRBtn">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>89</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>read file</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="wfBuildRBtn">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>40</y>
+             <width>89</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>built</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="int_tab">
+         <property name="secname" stdset="0">
+          <string>intsection</string>
+         </property>
+         <property name="func" stdset="0">
+          <string>find_int_cntrls</string>
+         </property>
+         <property name="ctl_list" stdset="0">
+          <string>int_control</string>
+         </property>
+         <property name="sec_chk" stdset="0">
+          <string>int_inc</string>
+         </property>
+         <property name="sec_str" stdset="0">
+          <string>INTEGRATOR</string>
+         </property>
+         <attribute name="title">
+          <string>Integrator</string>
+         </attribute>
+         <widget class="QLabel" name="dirfre_lab_12">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Other Options</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="int_inc">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>0</y>
+            <width>85</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Check if you want section to be included</string>
+          </property>
+          <property name="text">
+           <string>Include</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="int_free_text">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>611</width>
+            <height>651</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Space for free text to enter other options&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="quantp" stdset="0">
+           <string>free</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="prePageBtn">
+        <property name="geometry">
+         <rect>
+          <x>910</x>
+          <y>740</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Press to Generate Input file</string>
+        </property>
+        <property name="text">
+         <string>Previous Page</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1327</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOpen_File">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionGenerate_Input"/>
+    <addaction name="actionOpen_File"/>
+    <addaction name="actionSave_File"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuOpen_File"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen_File">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionSave_File">
+   <property name="text">
+    <string>Save File</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionGenerate_Input">
+   <property name="text">
+    <string>Generate Input</string>
+   </property>
+   <property name="toolTip">
+    <string>Generate Input File</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,17 @@
+## MCTDH input file:
+
+RUN-SECTION
+ name =   
+ title =   
+ tinit = 0.0  
+ tfinal = 25.0  
+ tout = 0.5  
+ tpsi = 0.5  
+ tstop = PyQt5.QtCore.QTime(0, 0)  
+ propagation wavefunction
+ 
+ 
+END-RUN-SECTION
+
+end-input
+ 
